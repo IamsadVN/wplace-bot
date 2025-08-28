@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "@wplace-bot/api",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -24,7 +24,7 @@
     "chalk": "^5.6.0",
     "dotenv": "^17.2.1",
     "drizzle-orm": "^0.44.4",
-    "express": "^5.1.0",
+    "fastify": "^5.5.0",
     "mysql2": "^3.14.3"
   }
 }

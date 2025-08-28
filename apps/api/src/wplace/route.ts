@@ -1,12 +1,11 @@
-import { GetPixelInfoResponse, HealthResponse, PixelInfoRequest } from "../types/wplace.js";
+import { HealthResponse } from "../types/wplace.js";
 import { systemLogger } from "../libs/logger.js";
+import { PixelInfoRequest, GetPixelInfoResponse } from "../types/paint.js";
 
-class WplaceAPI {
-	public url: string;
+const WPLACE_BACKEND_URL = "https://backend.wplace.live" as const;
 
-	public constructor(url: string) {
-		this.url = url;
-	}
+export class WplaceAPI {
+	public constructor() {}
 
 	public async getPixelInfo(options: PixelInfoRequest) {
 		const response = await this.request(`/s${options.season}/pixel/${options.tile[0]}/${options.tile[1]}?x=${options.pixel[0]}&y=${options.pixel[1]}`);
@@ -38,7 +37,7 @@ class WplaceAPI {
 
 	private async request(path: string, body?: RequestInit): Promise<Response | void> {
 		try {
-			const response = await fetch(`${this.url}${path}`, body);
+			const response = await fetch(`${WPLACE_BACKEND_URL}${path}`, body);
 		
 			if (response.status === 429) {
 				const retryAfter = response.headers.get("Retry-After");

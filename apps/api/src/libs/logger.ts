@@ -65,3 +65,4 @@ class Logger {
 }
 
 export const systemLogger = new Logger("system");
+export const apiLogger = new Logger("api");

@@ -24,29 +24,6 @@ export interface UserDataResponse {
 	showLastPixel: boolean;
 }
 
-export interface PixelInfoRequest {
-	season: number;
-	tile: [number, number];
-	pixel: [number, number];
-}
-
-export interface GetPixelInfoResponse {
-	paintedBy: {
-		id: number;
-		name: string;
-		allianceId: number;
-		allianceName: string;
-		equippedFlag: number;
-	},
-	region: {
-		id: number;
-		cityId: number;
-		name: string;
-		number: number;
-		countryId: number;
-	}
-}
-
 export interface HealthResponse {
 	database: boolean;
 	up: boolean;

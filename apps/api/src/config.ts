@@ -5,7 +5,7 @@ LoadEnv({
 });
 
 const configEnv = {
-	apiPort: process.env.API_PORT,
+	apiPort: Number(process.env.API_PORT),
 	dbURL: process.env.DATABASE_URL
 }
 

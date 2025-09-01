@@ -1,0 +1,9 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"skipLibCheck": false
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}

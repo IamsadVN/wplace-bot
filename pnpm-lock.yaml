@@ -33,6 +33,9 @@ importers:
       '@types/node':
         specifier: ^24.3.0
         version: 24.3.0
+      '@wplace-bot/types':
+        specifier: workspace:*
+        version: link:../../packages/types
       drizzle-kit:
         specifier: ^0.31.4
         version: 0.31.4
@@ -43,6 +46,8 @@ importers:
   apps/web: {}
 
   packages/enums: {}
+
+  packages/types: {}
 
 packages:
 

@@ -13,7 +13,7 @@ export interface ParsedTokenPayload {
 
 export type ParsedTokenSignature = string;
 
-export interface WplaceJWTTokenParsed {
+export interface ParsedToken {
 	header: ParsedTokenHeader,
 	payload: ParsedTokenPayload,
 	signature: ParsedTokenSignature;

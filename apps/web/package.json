@@ -1,13 +1,12 @@
 {
-  "name": "web",
+  "name": "@place2w/web",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Iamsad_VN",
   "packageManager": "pnpm@10.14.0"
 }

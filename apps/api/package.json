@@ -1,5 +1,5 @@
 {
-  "name": "@wplace-bot/api",
+  "name": "@place2w/api",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -11,9 +11,7 @@
     "build": "pnpm run clean && npx tsc",
     "start": "node ."
   },
-  "keywords": [],
   "author": "Iamsad_VN",
-  "license": "MIT",
   "packageManager": "pnpm@10.14.0",
   "devDependencies": {
     "@types/node": "^24.3.0",

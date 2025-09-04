@@ -1,5 +1,5 @@
 {
-  "name": "@wplace-bot/types",
+  "name": "@place2w/types",
   "private": true,
   "type": "module",
   "types": "src/index.d.ts",

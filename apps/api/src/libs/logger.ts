@@ -2,18 +2,18 @@ import chalk from "chalk";
 
 function getDate() {
 	const date = new Date();
-	
-	const timeStr = [
-		String(date.getHours()).padStart(2, "0"), 
-		String(date.getMinutes()).padStart(2, "0"),
-		String(date.getSeconds()).padStart(2, "0")
-	].join(":");
 
-	const dateStr = [
-		String(date.getFullYear()).padStart(2, "0"),
-		String(date.getMonth()).padStart(2, "0"),
-		String(date.getDate()).padStart(2, "0")
-	].join("/");
+	const timeStr = date.toLocaleTimeString("en-US", {
+		hour: "2-digit",
+		minute: "2-digit",
+		second: "2-digit",
+		hour12: false
+	});
+	const dateStr = date.toLocaleDateString("en-US", {
+		year: "numeric",
+		month: "2-digit",
+		day: "2-digit"
+	});
 
 	return `${dateStr} ${timeStr}`;
 }
